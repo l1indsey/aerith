@@ -1,3 +1,10 @@
+var light = document.querySelector("#light")
+
+document.addEventListener('mousemove', (e) => {
+	light.style.top = (e.pageY - 250) + "px"
+	light.style.left = (e.pageX - 300) + "px"
+})
+	
 var opacity = 0;
 var intervalID = 0;
 window.onload = fadeIn;
@@ -112,10 +119,3 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
-
-var light = document.querySelector("#light")
-
-document.addEventListener('mousemove', (e) => {
-	light.style.top = (e.pageY - 250) + "px"
-	light.style.left = (e.pageX - 300) + "px"
-})
