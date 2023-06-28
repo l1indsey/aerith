@@ -57,6 +57,17 @@ html {
     }
 }
 
+#light {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    z-index: 10;
+    -webkit-box-shadow: inset 0px 0px 250px 200px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 250px 200px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 250px 200px rgba(0,0,0,1);
+}
+
 body {
     font-size: var(--font-size-small);
     font-family: var(--font-stack);
